@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="script.js"></script>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+
+        /* Style the tab */
+        .tab {
+          float: left;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+          width: 30%;
+          height: 300px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          float: left;
+          padding: 0px 12px;
+          border: 1px solid #ccc;
+          width: 70%;
+          border-left: none;
+          height: 300px;
+          display: none;
+        }
+
+        /* Clear floats after the tab */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        body {margin:0;}
+
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+
+        .main {
+          padding: 16px;
+          margin-top: 30px;
+          height: 1500px; /* Used in this example to enable scrolling */
+        }
+      </style>
+    </head>
+    <body>
+
+      <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="main">
+      
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
+ 
+        
+    <h1>The One Question Most Americans Get Wrong About College Graduates</h1>
+    <p>
+      <b> What do you think the unemployment rate is for 25-to-34-year-olds who graduated from a four-year college? </b> (Hint: for those with only a high school degree, it’s 7.4 percent.)
+    </p>
+
+    <div>
+    <a class="waves-effect waves-light btn">FANCY BUTTON</a>
+    <button type="button"  onclick="document.getElementById('demo').innerHTML = Date()">
+     Click here for date and time </button>
+
+    <p id="demo"></p>
+    </div>
+  <div>
+    
+    <button onclick="myFunction()">SAY HELLO - CLICK HERE</button>
+
+    <script>
+      function myFunction() {
+        var x = document.createElement("INPUT");
+        x.setAttribute("type", "text");
+        x.setAttribute("value", "Hello World!");
+        document.body.appendChild(x);
+      }
+    </script>
+    </div>
+    
+    <h2>Hover Tabs</h2>
+    <p>Move the mouse over a button inside the tabbed menu:</p>
+
+    <div class="tab">
+      <button class="tablinks" onmouseover="openCity(event, 'London')">London</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Paris')">Paris</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Tokyo</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p> 
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Tokyo</h3>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div class="clearfix"></div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+        
+ 
+      </div>
+      
+      <div>
+        <form action="">
+          User name:<br>
+          <input type="text" name="userid">
+          <br>
+          User password:<br>
+          <input type="password" name="psw">
+        </form> 
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right"></i>
+        </button> 
+      
+      </div>
+    </body>
+      </head>
+    
+</html>  
+    
